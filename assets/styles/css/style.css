@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Babylonica&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*cores
+#CE35FE
+#6F30E6
+#424EFC
+#006CE6
+#35E3FE
+*/
+
+
+:root {
+  font-family: "Open Sans", sans-serif;
+}
+
+.container {
+  width: 85%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/*Header*/
+
+h1 img {
+  width: 175px;
+}
+
+.nav-desktop__home {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+ul.navigation-ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation-ul__li a {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  text-decoration: none;
+  color: #FFF;
+}
+
+.nav-desktop__logo {
+  width: 30%;
+}
+
+.nav-desktop__navigation {
+  width: 50%;
+}
+
+header.nav-desktop {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  position: absolute;
+  z-index: 1000;
+}
+
+/*Banner Home*/
+
+.banner-home__ul-li {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+  width: 100%;
+}
+
+
+#banner-01 {
+  background-image: linear-gradient(rgba(206, 53, 254, 0.07), rgba(228, 156, 246, 0.79)), url(/assets/imagens/banner/img1min1.jpg);
+}
+
+#banner-02 {
+  background-image: linear-gradient(rgba(206, 53, 254, 0.07), rgba(228, 156, 246, 0.79)), url(/assets/imagens/banner/6-min1.jpg);
+}
+
+#banner-03 {
+  background-image: linear-gradient(rgba(206, 53, 254, 0.07), rgba(228, 156, 246, 0.79)), url(/assets/imagens/banner/acro.jpg);
+}
+
+.banner-home__ul-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: -webkit-fill-available;
+}
+
+h2 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  backdrop-filter: blur(5px);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 0.1em;
+  height: 200px;
+  padding: 0em 1em;
+  text-align: center;
+}
+
+h2 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 40px;
+  font-size: 500;
+  font-weight: 500;
+  color: #fff;
+}
+
+/*about-us*/
+section.about-us {
+  padding: 100px 0;
+}
+
+.about-us img {
+  width: 150px;
+}
+
+.about-us__box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about-us__box-imgs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 30%;
+  height: 285px;
+}
+
+.about-us__box-imgs h2 {
+  color: #505050;
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1.6px;
+}
+
+.about-us__box-imgs p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  color: #a4a2a2;
+  font-weight: 400;
+}
+
+/*Galery*/
+
+.galery {
+  background-color: #fafafa;
+  padding: 50px 0;
+}
+
+.galery-box__text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 70px;
+}
+
+
+.galery h3, .galery-hours__text h3 {
+  font-size: 30px;
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 4.4px;
+  text-align: center;
+}
+
+.galery p {
+  padding-bottom: 50px;
+}
+
+.galery-hours__text h3 {
+  padding-top: 100px;
+}
+
+.galery p, .galery-hours__text p {
+  color: #a4a2a2;
+  text-align: center;
+  font-size: 18px;
+  line-height: 30px;
+  margin: 0;
+  width: 100%;
+}
+
+.galery-imgs img {
+  width: 100%;
+}
+
+.galery-imgs__box {
+  width: 25%;
+  height: 230px;
+}
+
+.galery-imgs {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+/*Footer*/
+
+footer {
+  background-image: url(/assets/imagens/footer-background-img.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 50vh;
+}
