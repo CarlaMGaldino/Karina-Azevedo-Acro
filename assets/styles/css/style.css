@@ -104,6 +104,7 @@ h2 {
   border-radius: 0.1em;
   padding: 0em 1em;
   text-align: center;
+  padding: 20px 20px 30px;
 }
 
 h2 {
@@ -112,6 +113,10 @@ h2 {
   font-size: 500;
   font-weight: 500;
   color: #fff;
+}
+
+.banner-home__ul-box img {
+  padding: 20px 0;
 }
 
 /*about-us*/
@@ -298,6 +303,11 @@ div#box-hours {
 
 .galery-hours__box-img img {
   max-width: 100%;
+}
+
+.galery-hours__box-img h3 {
+  font-size: 18px;
+  text-align: inherit;
 }
 
 /*banner acro*/
@@ -539,6 +549,15 @@ a.blog-box__imgs-span {
   text-decoration: none !important;
 }
 
+h3.blog-box__imgs-h3 a:hover {
+  color: #5ed3cb;
+}
+
+a.blog-box__imgs-span span:hover {
+  color: #5ed3cb;
+}
+
+
 /*Owl carrousel*/
 
 section.carrousel {
@@ -549,6 +568,30 @@ section.carrousel {
 .carrousel-box {
   display: flex;
   align-items: center;
+}
+
+.item.carrousel-box__img img {
+  width: 100px;
+  margin-bottom: 16px;
+}
+
+.item.carrousel-box__img blockquote, .item.carrousel-box__img cite {
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.item.carrousel-box__img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot {
+  font-size: 55px;
+  color: #fff;
 }
 
 /*Contact-us*/
@@ -591,6 +634,13 @@ form button {
   color: #fff;
 }
 
+
+form button:hover {
+  background-color: #5ed3cb;
+  border: 1px solid #5ed3cb;
+  transition: 0.5s ease;
+}
+
 .contact-box__form-contact h3 {
   font-size: 18px;
   font-weight: 600;
@@ -624,6 +674,11 @@ form button {
 }
 
 
+.fa.fa-pinterest-p, .fa.fa-whatsapp, .fa {
+  font-weight: 900 !important;
+  color: #c796e8
+}
+
 /*Footer*/
 
 footer {
@@ -631,8 +686,110 @@ footer {
   background-repeat: no-repeat;
   background-position: right;
   background-size: cover;
-  height: 50vh;
+  height: 60vh;
   padding: 50px 0;
+}
+
+.footer-networks {
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.footer-networks__contact h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 220px;
+  height: 50px;
+  background-color: #c796e8;
+  padding: 10px;
+}
+
+.footer-networks__contact h3:hover {
+  background-color: #5ed3cb;
+  transition: 1s ease;
+}
+
+.footer-networks__contact a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer-instagram {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-instagram__photos img:hover {
+  background-color: aliceblue;
+}
+
+.footer-networks__contact, .footer-networks__post.blog, .footer-instagram {
+  width: 30%;
+}
+
+.footer-networks__post.blog h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.footer-network__post-box h3 {
+  font-size: 20px;
+}
+
+.footer-networks__post.blog {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.footer-networks__post.blog:after {
+  content: '';
+  width: 319px;
+  height: 1px;
+  position: absolute;
+  z-index: 1000;
+  top: 53%;
+  background-color: #6b6b6b;
+}
+
+a.footer-network__post-a {
+  text-decoration: none;
+  color: #fff;
+}
+
+p.footer-network__post-p {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 300;
+  margin: 10px 0 10px 0;
+}
+
+span.footer-network__post-span {
+  font-size: 12px;
+  font-weight: 600;
+  color: #6b6b6b;
+}
+
+.footer-instagram__photos img {
+  border: 1px solid #fff;
+  margin: 0 0 20px 10px;
+}
+
+.footer-network__post-box {
+  margin-bottom: 20px;
+}
+
+.footer-instagram h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+li.navigation-ul__li a:hover, a.footer-network__post-a:hover {
+  color: #c796e8;
+  transition: 0.5s ease;
 }
 
 .footer-copyright:before {
@@ -647,8 +804,10 @@ footer {
 
 .footer-copyright {
   position: relative;
+  display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 0;
 }
 
 .footer-copyright__logo {
@@ -657,4 +816,52 @@ footer {
 
 .nav-footer {
   width: 60%;
+}
+
+.footer-copyright__logo img {
+  width: 140px;
+}
+
+.footer-dev a {
+  text-decoration: none;
+}
+
+.footer-dev h3 {
+  font-size: 12px;
+  color: #6a6a6a;
+}
+
+.footer-dev h3:hover {
+  font-size: 12px;
+  color: #c796e8
+}
+
+.footer-dev {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+#footer-back-to-top {
+  display: block;
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  margin: 0;
+  width: 48px;
+  height: 48px;
+  z-index: 10000;
+  text-align: center;
+  background-color: #c796e8;
+}
+
+a#footer-back-to-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a#footer-back-to-top svg {
+  width: 20px;
+  filter: invert(1);
 }
