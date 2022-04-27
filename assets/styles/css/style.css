@@ -82,15 +82,15 @@ header.nav-desktop__color {
 
 
 #banner-01 {
-  background-image: linear-gradient(rgba(206, 53, 254, 0.07), rgba(228, 156, 246, 0.79)), url(/assets/imagens/banner/banner-01-min.jpg);
+  background-image: linear-gradient(rgba(206, 53, 254, 0.07), rgba(228, 156, 246, 0.79)), url(../../imagens/banner/banner-01-min.jpg);
 }
 
 #banner-02 {
-  background-image: linear-gradient(rgba(206, 53, 254, 0.07), rgba(228, 156, 246, 0.79)), url(/assets/imagens/banner/banner-2-min.jpg);
+  background-image: linear-gradient(rgba(206, 53, 254, 0.07), rgba(228, 156, 246, 0.79)), url(../../imagens/banner/banner-2-min.jpg);
 }
 
 #banner-03 {
-  background-image: linear-gradient(rgba(206, 53, 254, 0.07), rgba(228, 156, 246, 0.79)), url(/assets/imagens/banner/banner-3-min.jpg);
+  background-image: linear-gradient(rgba(206, 53, 254, 0.07), rgba(228, 156, 246, 0.79)), url(../../imagens/banner/banner-3-min.jpg);
 
 }
 
@@ -691,7 +691,7 @@ form button:hover {
 /*Footer*/
 
 footer {
-  background-image: url(/assets/imagens/galery-site/footer-background-img.jpg);
+  background-image: url(../../imagens/galery-site/footer-background-img.jpg);
   background-repeat: no-repeat;
   background-position: right;
   background-size: cover;
