@@ -1,4 +1,6 @@
 $(".owl-carousel").owlCarousel({
+  autoplay: true,
+  speed: 5000,
   loop: true,
   margin: 10,
   nav: true,

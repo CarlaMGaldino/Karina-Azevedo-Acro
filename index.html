@@ -17,27 +17,33 @@
 </head>
 
 <body>
-  <main>
-
-    <header class="nav-desktop">
+   <header class="nav-desktop" data-header="headerGet">
       <div class="container">
 
         <div class="nav-desktop__home">
 
           <div class="nav-desktop__logo">
+            <a href="./index.html">
             <h1> <img src="assets/imagens/banner/logo1.svg" alt=""> <br>
             </h1>
+          </a>
           </div>
 
           <div class="nav-desktop__navigation">
 
             <nav class="navigation">
-              <ul class="navigation-ul">
-
+              <button data-menu="button" aria-expanded="false" aria-controls="menu"></button>
+              <ul class="navigation-ul" data-menu="menuList">
+                <button data-menu="close" aria-label="fechar menu">X</button>
+                
+                <div class="navigation-logo__mobile">
+                  <img src="assets/imagens/banner/logo1.svg" alt=""> <br>
+                </div>
+     
                 <li class="navigation-ul__li"> <a id="home" href="#banner-id">Home</a></li>
                 <li class="navigation-ul__li"> <a id="sobre" href="#galery-id">Sobre</a></li>
                 <li class="navigation-ul__li"> <a id="aulas" href="#galery-hours-id">Aulas</a></li>
-                <li class="navigation-ul__li"> <a id="galeria" href="#blog-id">Blog</a></li>
+               <!--<li class="navigation-ul__li"> <a id="galeria" href="#blog-id">Blog</a></li>--> 
                 <li class="navigation-ul__li"> <a id="contato" href="#contact-id">Contato</a></li>
 
               </ul>
@@ -47,11 +53,13 @@
 
         </div>
 
+
       </div>
     </header>
 
+    <main>
     <!--Section Banner-->
-    <section class="banner" id="banner-id">
+        <section class="banner" id="banner-id">
       <div class="banner-home">
 
         <div class="banner-home__ul">
@@ -277,6 +285,50 @@
       </div>
     </section>
 
+   <!--Contact-us-->
+   <section class="contact" id="contact-id">
+    <div class="container">
+
+      <div class="contact-box">
+        <div class="contact-box__text">
+          <h2>Entre em contato</h2>
+          <p>Deixe aqui sua dúvida, sugestão. Fico muito feliz em receber seu contato!</p>
+        </div>
+      </div>
+
+      <div class="contact-box__form">
+
+        <div class="contact-box__form-form">
+
+          <form action="">
+            <input type="text" placeholder="Nome">
+            <input type="text" placeholder="E-mail">
+            <input type="text-area" placeholder="Escreva sua mensagem">
+            <button type="submit">Enviar</button>
+          </form>
+
+        </div>
+
+        <div class="contact-box__form-text">
+          <div class="contact-box__form-contact">
+            <h3><i class="fa fa-whatsapp"></i> Whatsapp:</h3>
+            <a href="https://api.whatsapp.com/send?phone=5516992010876&text=Karina%20Yoga%20e%20Acro%20Yoga" target="_blank">
+              <span>(16) 99201-0876 </span>
+            </a>
+          </div>
+          <div class="contact-box__form-contact">
+            <h3><i class="fa fa-at"></i> E-mail</h3>
+            <a href="emailto:">
+              <span>karina@yoga.com.br</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
     <!--Blog-->
     <section class="blog" id="blog-id">
       <div class="container">
@@ -361,49 +413,7 @@
       </div>
     </section>
 
-    <!--Contact-us-->
-    <section class="contact" id="contact-id">
-      <div class="container">
-
-        <div class="contact-box">
-          <div class="contact-box__text">
-            <h2>Entre em contato</h2>
-            <p>Deixe aqui sua dúvida, sugestão. Fico muito feliz em receber seu contato!</p>
-          </div>
-        </div>
-
-        <div class="contact-box__form">
-
-          <div class="contact-box__form-form">
-
-            <form action="">
-              <input type="text" placeholder="Nome">
-              <input type="text" placeholder="E-mail">
-              <input type="text-area" placeholder="Escreva sua mensagem">
-              <button type="submit">Enviar</button>
-            </form>
-
-          </div>
-
-          <div class="contact-box__form-text">
-            <div class="contact-box__form-contact">
-              <h3><i class="fa fa-whatsapp"></i> Whatsapp:</h3>
-              <a href="https://api.whatsapp.com/send?phone=5516992010876&text=Karina%20Yoga%20e%20Acro%20Yoga" target="_blank">
-                <span>(16) 99201-0876 </span>
-              </a>
-            </div>
-            <div class="contact-box__form-contact">
-              <h3><i class="fa fa-at"></i> E-mail</h3>
-              <a href="emailto:">
-                <span>karina@yoga.com.br</span>
-              </a>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section>
+ 
 
     <!--footer-->
     <footer>
@@ -495,7 +505,7 @@
 
         <div class="footer-dev">
           <a href="#">
-            <h3>Desenvolvido por Carla Galdino - &#169; Todos os direitos reservados</h3>
+            <h3>Desenvolvido por Carla Galdino - &#169; Karina Yoga&Acro 2022 - Todos os direitos reservados</h3>
           </a>
         </div>
 
@@ -514,11 +524,12 @@
   </main>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-  <script src="assets/js/scroll.js"></script>
-  <script src="assets/js/scroll-to-top.js"></script>
-  <script src="assets/js/slick.js"></script>
-  <script src="assets/js/owl/owl.carousel.min.js"></script>
-  <script src="assets/js/owl/owl-carrousel.js"></script>
+  <script src="./assets/js/menu-mobile.js"></script>
+  <script src="./assets/js/scroll.js"></script>
+  <script src="./assets/js/scroll-to-top.js"></script>
+  <script src="./assets/js/slick.js"></script>
+  <script src="./assets/js/owl/owl.carousel.min.js"></script>
+  <script src="./assets/js/owl/owl-carrousel.js"></script>
 </body>
 
 </html>
