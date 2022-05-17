@@ -80,7 +80,9 @@ header.nav-desktop {
 
 header.nav-desktop__color {
   background-color: var(--color-two);
+  height: 70px;
   position: fixed;
+  transition: 0.8s ease;
 }
 
 /*Banner Home*/
@@ -907,8 +909,16 @@ a#footer-back-to-top svg {
   display: none;
 }
 
+.navigation-logo__mobile {
+  display: none;
+}
+
 @media screen and (max-width: 768px) {
   /*Menu Mobile*/
+  .navigation-logo__mobile {
+    display: block;
+  }
+
   [data-menu="close"] {
     display: block;
   }
@@ -971,7 +981,7 @@ a#footer-back-to-top svg {
     justify-content: flex-start;
     gap: 40px;
     align-items: flex-start;
-    position: absolute;
+    position: fixed;
     top: 0;
     width: 60vw;
     height: 100vh;
@@ -1143,6 +1153,9 @@ a#footer-back-to-top svg {
     margin-top: 20px;
     text-align: center;
   }
+  .contact-box__form-contact:not(:last-of-type) {
+    margin-bottom: 30px;
+  }
 
   footer {
     height: auto;
@@ -1197,6 +1210,10 @@ a#footer-back-to-top svg {
     justify-content: center;
     align-items: center;
     text-align: center;
+  }
+
+  footer {
+    background-position: center;
   }
 
   .navigation-ul__li a {
